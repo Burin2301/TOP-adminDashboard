@@ -1,0 +1,252 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 18px;
+}
+:root{
+    /* CYAN */
+    --50:#ecfeff;
+    --100:#cffafe;
+    --200:#a5f3fc;
+    --300:#67e8f9;
+    --400:#22d3ee;
+    --500:#06b6d4;
+    --600:#0891b2;
+    --700:#0e7490;
+    --800:#155e75;
+    --900:#164e63;
+    --950:#083344;
+
+}
+/* IMAGES FORMATTING */
+.list-icon{
+    width: 1.8em;
+    height: 1.8em;
+}
+.icon-upper{
+    width: 2em;
+    height: 2em;
+}
+.profile-picture-upper{
+    width: 3em;
+    height: 3em;
+}
+.profile-picture-lower{
+    width: 3.6em;
+    height: 3.6em;
+    margin: .6em 1.2em;
+}
+.user-icon{
+    width: 3em;
+    height: 3em;
+    margin-right: .4em;
+}
+.card-icons{
+    width: 1.4em;
+    height: 1.4em;
+    margin-left: 1em;
+}
+
+/* CONTAINER */
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 18% 1fr;
+    background-color: var(--300);
+}
+
+/* LEFT ASIDE XDDDD */
+
+.right-aside{
+    background-color: white;
+    color: var(--900);
+    font-weight: bold;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+
+    padding: 20px 20px;
+}
+
+.right-aside figure{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 3em;
+}
+
+.right-aside ul{
+    list-style: none;
+}
+
+.right-aside .list1,
+.right-aside .list2{
+    display: grid;
+    grid-template-rows: repeat(6 1fr);
+    row-gap: .5em;
+    margin-bottom: 3em;
+}
+.right-aside .list1 li,
+.right-aside .list2 li{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: .5em;
+    align-items: center;
+}
+
+/* MAIN CONTAINER */
+
+main{
+    display: grid;
+    grid-template-rows: 20% 1fr;
+}
+
+/* HEADER */
+header{
+    height: 20vh;
+    width: 100%;
+    background-color: var(--200);
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: .8em 2.8em .8em 1.8em ;
+    box-shadow: 0 .4em var(--400);
+}
+
+/* UPPER ROW */
+.upper-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-bar{
+    display: flex;
+    gap: 1em;
+}
+.search-bar-field{
+    height: 32px;
+    width: 40em;
+    background-color: var(--300);
+    border-radius: 10px;
+}
+.profile{
+    display: flex;
+    gap: 1.8em;
+    align-items: center;
+}
+.profile p{
+    font-weight: bold;
+    padding: .7em;
+}
+.lower-row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.greeting-user{
+    margin-right: auto;
+}
+.greeting-user h3 span{
+    margin-left: .4em;
+}
+.lower-buttons{
+    background-color: var(--700);
+    color: var(--50);
+    font-weight: bold;
+    padding: .4em 1.4em;
+    border-radius: .8em;
+    margin-left: 2em;
+}
+
+/* HERO */
+hero{
+    display: grid;
+    grid-template-columns: 3fr 1fr;    
+}
+.main-cards{
+    display: grid;
+    width: 100%;
+    padding: 0 1em 2em 1em;
+}
+.main-cards .p-projects{
+    font-weight: 2em;
+    font-weight: bold;
+}
+.all-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 2em;
+}
+.single-card{
+    display: grid;
+    grid-template-rows: 1fr 1fr 10%;
+    height: auto;
+    background-color: var(--50);
+    color: var(--800);
+    padding: 1.4em 1.4em;
+}
+.card-icon-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    place-items: end;
+}
+
+
+
+/* RIGHT ASIDE XDDDD */
+.left-aside{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+
+
+.trending-board{
+    background-color: var(--50);
+    padding: 1em;
+    border-radius: .4em;
+
+    display: flex;
+    grid-template-rows: repeat(4 1fr);
+}
+
+.users{
+    display: flex;
+    padding: .4em;
+    border-bottom:1px solid var(--700);
+}
+.user-names p{
+    color: var(--800);
+}
+
+
+
+
+
+
+
+
+
+.announcement-board{
+    background-color: var(--50);
+    padding: 1em;
+    border-radius: .4em;
+
+    display: grid;
+    grid-template-rows: repeat(4 1fr);
+}
+.single-announcemente h4{
+    font-size: .6em;
+}
+.single-announcemente p{
+    font-size: .4em;
+}
